@@ -69,12 +69,29 @@ fieldset {
 
 /* !!! place all of your custom styles here !!! */
 body {
-  box-sizing: border-box;
-    background-image: url(../img/headerimage.png);
-    background-repeat: no-repeat
+    box-sizing: border-box;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    
+    
+  
     
 }
 
+#header-id .hand {
+ float: right;
+    
+}
+
+.page-header {
+    background-image: url('/img/headerimage.png');
+    background-repeat: no-repeat;
+    min-height: 500px;
+    background-size: 100%;
+     border-style: solid;
+    border-bottom-color: red;
+    
+}
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -99,6 +116,10 @@ body {
     padding: 30px;
     border-style: solid;
     border-top-color: red;
+    padding-bottom: 70px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+    font-size: 10px;
 }
 
 .wrap {
@@ -119,7 +140,7 @@ body {
 .headerimage {
     position: absolute;
     width: 100%;
-margin-top: -60px;
+    margin-top: -60px;
     padding:0;
     z-index: 100;
 
@@ -140,11 +161,15 @@ margin-top: -60px;
 
 .p-color {
     color: #323333;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
 }
 
 
 p {
- color: white;   
+    color: white;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
 }
 /* nav styles */
 
@@ -162,15 +187,15 @@ padding: 0;
     
 }
 
-.
+
 
 .nav-list li:first-child {
   margin-left: 0;
 }
 
 .nav-list a {
-  font-family: helvetica;
-  font-weight: medium;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
   text-transform: lowercase;
   font-size: 16px;
   text-decoration: none;
@@ -186,10 +211,10 @@ padding: 0;
 .nav-list a:active,
 .nav-list a:focus {
   opacity: .5;
-  border-bottom: 3px solid #eee;
+  
 }
 
-
+/* media queries */
 
 @media (min-width: 720px) {
   .content-column {
@@ -215,14 +240,92 @@ padding: 0;
   }
 }
 
+@media all and (max-width: 870px) {
+ .hand {
+    display: none;   
+ }
+    
+}
+
+@media all and (max-width: 400px) {
+   
+    
+    .bkg-img-p {
+     display: none;   
+    }
+    
+ .page-header {
+        background-image: url('/img/homeappmock.png');
+    background-repeat: no-repeat;
+    }   
+    
+    .nav-list {
+  margin: 0;
+padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-right: 12px;
+    padding: 5px;
+    
+}
 
 
 
+.nav-list li:first-child {
+  margin-left: 0;
+}
 
+.nav-list a {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+  text-transform: lowercase;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.1s linear;
+}
 
+.nav-list a:link,
+.nav-list a:visited {
+  color: black;
+}
 
+.nav-list a:hover,
+.nav-list a:active,
+.nav-list a:focus {
+  opacity: .5;
+  
+}
+}
 
+#content .app-shots {
+    float: left;
+    padding: 5px;
+    
+    
+}
 
+#content {
+ overflow: hidden;   
+}
+
+.p-feature {
+    color: #666973;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+h1, h2, h3 {
+    color: #666973;
+}
+
+.uconn-stamford {
+    float:left;
+    padding-bottom: 50px;
+}
 
 /* ==========================================================================
    Helper classes
