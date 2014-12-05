@@ -107,14 +107,9 @@ body {
   margin-right: -4px;
 }
 
-.footer {
+.footer, .slogan {
     text-align: center;
 }
-
-.slogan {
-    text-align: center;
-}
-
 
 .footer {
     background-color: #041757;
@@ -252,11 +247,6 @@ padding: 0;
     
 }
 
-.bkg-img-p {
-    display: inline-block;
-    width: 50%;
-}
-
 @media all and (max-width: 400px) {
    
     
@@ -335,10 +325,6 @@ h1, h2, h3 {
 .uconn-stamford {
     float:left;
     padding-bottom: 50px;
-}
-
-.header-logos {
-    padding: 0;   
 }
 
 /* ==========================================================================
